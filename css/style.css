@@ -1,0 +1,75 @@
+body{
+    background-color: #232323;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+.container h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.container button{
+    margin: 20px;
+    width: 300px;
+    height: 40px;
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+}
+
+.container button a{
+    color: black;
+    text-decoration: none;
+}
+
+.container .yes{
+    background-color: rgb(12, 220, 12);
+}
+
+.container .yes:hover{
+    background-color: rgb(4, 194, 4);
+}
+
+.no{
+    display: inline-block;
+    background-color: red;
+    position: relative;
+    overflow: hidden;
+}
+
+.no:hover{
+    background-color: rgb(4, 194, 4);
+}
+
+.no{
+    transition: 0.3s ease;
+}
+
+.no a:first-child {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.no:hover a:first-child{
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.no a:last-child{
+    transform: translateY(100%);
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.no:hover a:last-child{
+    transform: translateY(0);
+    opacity: 1;
+}
